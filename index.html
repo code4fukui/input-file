@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+</head><body>
+<h1>input-file test</h1>
+<main>
+  <script type="module" src="./input-file.js"></script>
+  <input-file id="infile" multiple></input-file><br>
+  <br>
+  selected files<br>
+  <textarea id=inbody></textarea><br>
+</main>
+
+<style>
+main > * {
+  margin: .5em 0;
+}
+textarea {
+  width: 80vw;
+  height: 15em;
+  padding: .3em;
+  line-height: 1.5em;
+}
+
+</style>
+
+<script type="module">
+infile.addEventListener("change", async (e) => {
+  const files = e.detail.files;
+  console.log(files);
+  inbody.value = files.map(i => i.name);
+});
+</script>
+
+</body></html>
