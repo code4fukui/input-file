@@ -29,7 +29,7 @@ export class InputFile extends HTMLElement {
         background: #fafafa;
         user-select: none;
         transition: background 0.15s ease, border-color 0.15s ease;
-        min-width: 180px;
+        x-min-width: 180px;
         text-align: center;
       }
 
@@ -75,7 +75,7 @@ export class InputFile extends HTMLElement {
       }
 
       .file-list:empty::before {
-        content: "選択されたファイルはありません";
+        content: "選択ファイルなし";
       }
 
       .file-item {
