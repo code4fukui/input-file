@@ -7,7 +7,7 @@ export class InputFile extends HTMLElement {
     style.textContent = `
       :host {
         display: inline-block;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: sans-serif;
         font-size: 0.9rem;
       }
 
@@ -22,7 +22,7 @@ export class InputFile extends HTMLElement {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 1em 1.5em;
+        padding: 0.4em 1em;
         border-radius: 6px;
         border: 2px solid #bbb;
         cursor: pointer;
