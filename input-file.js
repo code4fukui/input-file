@@ -64,7 +64,7 @@ export class InputFile extends HTMLElement {
         overflow-y: auto;
         border: 1px solid #ddd;
         border-radius: 4px;
-        min-width: 220px;
+        x-min-width: 220px;
         background: #fff;
       }
 
